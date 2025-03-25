@@ -1,15 +1,18 @@
 import { Text, View, TouchableOpacity, Image, ScrollView } from 'react-native'
 import React from 'react'
 import Svg, { Path } from 'react-native-svg';
+import { useNavigation } from '@react-navigation/native';
 
 const HomeLists = ({HeaderText, ArrayCall, isFavorite, ToggleFavorite, Price}) => {
+  const navigation = useNavigation()
+
   return (
     <View className="w-full h-[17.4rem] flex items-center justify-center relative">
       <Text className=" left-[1.7rem] top-0 absolute font-semibold">{ HeaderText }</Text>
       <View className="w-[95%] h-[75%] ml-[1.4rem] mt-[.8rem]">
         <ScrollView className="w-full h-full" horizontal={true} showsHorizontalScrollIndicator={false}>
           { ArrayCall.map((v, k) => (
-            <View key={k} className="w-[12rem] h-full flex flex-col mr-[1.1rem] border-[1px] border-[#E8E8E8] rounded-[.6rem]">
+            <TouchableOpacity key={k} className="w-[12rem] h-full flex flex-col mr-[1.1rem] border-[1px] border-[#E8E8E8] rounded-[.6rem]" onPress={() => navigation.navigate('Product', { data: v })}>
               <View className="w-full h-[67%] rounded-t-[.6rem] relative">
                 <Image className="w-full h-full rounded-t-[.55rem]" source={v.image} resizeMode='cover' />
                 <TouchableOpacity className="w-[20px] h-[21px] left-[.5rem] top-[.5rem] absolute" onPress={() => ToggleFavorite(k)}>
@@ -28,7 +31,7 @@ const HomeLists = ({HeaderText, ArrayCall, isFavorite, ToggleFavorite, Price}) =
                 <Text className="text-[.75rem] font-semibold left-[.7rem] top-[2.3rem] absolute">{ v.name }</Text>
                 { Price && (<Text className="text-[.75rem] font-semibold right-[.6rem] top-[2.3rem] absolute">${ v.price }/N</Text>) }
               </View>
-            </View>
+            </TouchableOpacity>
           ))}
         </ScrollView>
       </View>
