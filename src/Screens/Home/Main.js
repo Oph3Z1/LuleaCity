@@ -19,7 +19,7 @@ const Restaurant = [
       city: "SE-972 32 Luleå, Sverige"
     },
     contact: {
-      email: "Använd hemsidan!",
+      email: "Besök hemsidan!",
       phone: "+46 (0)920-104 29",
       website: "https://www.kebab-huset.se/platser/luleastad/"
     }
@@ -55,7 +55,7 @@ const Restaurant = [
       city: "SE-973 46 Luleå, Sverige"
     },
     contact: {
-      email: "Använd hemsidan!",
+      email: "Besök hemsidan!",
       phone: "+46 (0)920-690 45",
       website: "https://kontakt.mcdonalds.se/se/sv-se/contact-us?openOutsideMcd=true"
     }
@@ -162,7 +162,7 @@ const Stays = [
       city: "SE-975 61 Luleå, Sverige"
     },
     contact: {
-      email: "Besök booking.com",
+      email: "Besök booking.com!",
       phone: "",
       website: "https://www.booking.com/hotel/se/lulea-village-cabin.sv.html?label=se-lulea-*rgAveSSEIbDgUlJOygZbgS506508386583%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-404252355102%3Alp1012265%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ye8F2ouj63ytZ9amXY91ZM0&sid=5825efae4f5ca784ae7e1482078e5f01&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkCJYlBmz0xasYU1fP9sx6gLy3tYgilEZaeX877-8DhoHG_x6U2gbyhoCgOAQAvD_BwE&aid=1810669"
     }
