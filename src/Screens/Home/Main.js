@@ -7,19 +7,58 @@ import HomeLists from '../../Components/HomeLists';
 
 const Restaurant = [
   {
-    name: "Max Burgers",
+    name: "Kebabhuset",
     rating: 5.0,
-    image: require("../../../assets/max-lulea.png"),
+    image: require("../../../assets/kebabhuset.jpeg"),
+    description: "Kebabhuset Luleå är en populär restaurang som erbjuder utsökt kebab, pizzor och andra snabbmatsfavoriter.",
+    address: {
+      company: "Kebabhuset i Luleå AB",
+      orgNr: "559140-2168",
+      street: "Skeppsbrogatan 26",
+      box: "",
+      city: "SE-972 32 Luleå, Sverige"
+    },
+    contact: {
+      email: "Använd hemsidan!",
+      phone: "+46 (0)920-104 29",
+      website: "https://www.kebab-huset.se/platser/luleastad/"
+    }
   },
   {
     name: "Max Burgers",
     rating: 5.0,
     image: require("../../../assets/max-lulea.png"),
+    description: "Långt innan appar och mobiltelefoner präglade matupplevelsen, startade vår resa i det natursköna Norrland",
+    address: {
+      company: "MAX Burgers AB",
+      orgNr: "556188-7562",
+      street: "Hummergatan 1A",
+      box: "Box 814",
+      city: "SE-973 34 Luleå, Sverige"
+    },
+    contact: {
+      email: "info@max.se",
+      phone: "+46 (0)920-890 00",
+      website: "https://www.max.se/om-max/kontakt-oss/"
+    }
   },
   {
-    name: "Max Burgers",
+    name: "McDonald's Luleå",
     rating: 5.0,
-    image: require("../../../assets/max-lulea.png"),
+    image: require("../../../assets/donken.jpeg"),
+    description: "McDonald’s startade 1954 när Ray Kroc upptäckte bröderna McDonalds restaurang i San Bernadino. Bröderna Dick och Mac serverade högkvalitativa hamburgare – och det gick snabbt.",
+    address: {
+      company: "McDonald's Luleå",
+      orgNr: "",
+      street: "Banvägen 1",
+      box: "",
+      city: "SE-973 46 Luleå, Sverige"
+    },
+    contact: {
+      email: "Använd hemsidan!",
+      phone: "+46 (0)920-690 45",
+      website: "https://kontakt.mcdonalds.se/se/sv-se/contact-us?openOutsideMcd=true"
+    }
   },
 ]
 
@@ -29,36 +68,40 @@ const Hotels = [
     rating: 5.0,
     price: 180,
     image: require("../../../assets/hotelbg.webp"),
-  },
-  {
-    name: "Clarion Hotel Sense",
-    rating: 4,
-    price: 130,
-    image: require("../../../assets/hotelbg.webp"),
-  },
-  {
-    name: "Clarion Hotel Sense",
-    rating: 3,
-    price: 150,
-    image: require("../../../assets/hotelbg.webp"),
+    description: "Clarion Hotel Sense bjuder på en avslappnad kontinental atmosfär, där det norrländskt solida möter sofistikerad elegans med modern attityd - mitt i Luleå.",
+    address: {
+      company: "Clarion Hotel Sense",
+      orgNr: "556923-9899",
+      street: "Skeppsbrogatan 34",
+      box: "",
+      city: "SE-972 32 Luleå, Sverige"
+    },
+    contact: {
+      email: "cl.sense@strawberry.se",
+      phone: "+46 (0)920 450 450",
+      website: ""
+    }
   },
 ]
 
 const Cafeteria = [
   {
-    name: "Espresso House Smedjan",
+    name: "Espresso House",
     rating: 5.0,
     image: require("../../../assets/cafeteria-lulea.jpeg"),
-  },
-  {
-    name: "Espresso House Smedjan",
-    rating: 5.0,
-    image: require("../../../assets/cafeteria-lulea.jpeg"),
-  },
-  {
-    name: "Espresso House Smedjan",
-    rating: 5.0,
-    image: require("../../../assets/cafeteria-lulea.jpeg"),
+    description: "Vi finns här när du behöver oss - en plats där varje kopp kaffe och varje tugga lever upp till sitt löfte, att förgylla din dag.",
+    address: {
+      company: "Espresso House Smedjan Luleå",
+      orgNr: "",
+      street: "Storgatan 36",
+      box: "",
+      city: "SE-972 31 Luleå, Sverige"
+    },
+    contact: {
+      email: "",
+      phone: "+46 (0)76-521 93 22",
+      website: ""
+    }
   },
 ]
 
@@ -67,16 +110,19 @@ const ShoppingMall = [
     name: "Shopping Galleria",
     rating: 5.0,
     image: require("../../../assets/shopping.jpg"),
-  },
-  {
-    name: "Shopping Galleria",
-    rating: 5.0,
-    image: require("../../../assets/shopping.jpg"),
-  },
-  {
-    name: "Shopping Galleria",
-    rating: 5.0,
-    image: require("../../../assets/shopping.jpg"),
+    description: "Shopping är en fastighet som på många sätt alltid varit före sin tid – i mitten av 1950-talet som Sveriges första galleria.",
+    address: {
+      company: "Shopping galleria Luleå",
+      orgNr: "",
+      street: "Storgatan 51",
+      box: "",
+      city: "SE-972 31 Luleå, Sverige"
+    },
+    contact: {
+      email: "",
+      phone: "+46 (0)77-033 22 00",
+      website: ""
+    }
   },
 ]
 
@@ -85,37 +131,41 @@ const Barbers = [
     name: "Luleå Hair Style",
     rating: 5.0,
     image: require("../../../assets/barbers.jpg"),
-  },
-  {
-    name: "Luleå Hair Style",
-    rating: 5.0,
-    image: require("../../../assets/barbers.jpg"),
-  },
-  {
-    name: "Luleå Hair Style",
-    rating: 5.0,
-    image: require("../../../assets/barbers.jpg"),
+    description: "Luleå Hair Style är en professionell frisörsalong i Luleå som erbjuder klippning, styling och skäggtrimning för både män och kvinnor.",
+    address: {
+      company: "Luleå Hair Style",
+      orgNr: "",
+      street: "Kungsgatan 14",
+      box: "",
+      city: "SE-972 34 Luleå, Sverige"
+    },
+    contact: {
+      email: "",
+      phone: "+46 (0)72-466 66 63",
+      website: ""
+    }
   },
 ]
 
 const Stays = [
   {
-    name: "Stuga i Luleå",
+    name: "Luleå Village Cabin",
     rating: 5.0,
-    price: 90,
-    image: require("../../../assets/stuga.webp"),
-  },
-  {
-    name: "Stuga i Luleå",
-    rating: 5.0,
-    price: 90,
-    image: require("../../../assets/stuga.webp"),
-  },
-  {
-    name: "Stuga i Luleå",
-    rating: 5.0,
-    price: 90,
-    image: require("../../../assets/stuga.webp"),
+    price: 150,
+    image: require("../../../assets/stuga.jpg"),
+    description: "Boka nu, ändra senare — Lågpriser på Stugor i Sverige. Bästa pris-garanti.",
+    address: {
+      company: "Booking.com",
+      orgNr: "",
+      street: "Bäckvägen 1",
+      box: "",
+      city: "SE-975 61 Luleå, Sverige"
+    },
+    contact: {
+      email: "Besök booking.com",
+      phone: "",
+      website: "https://www.booking.com/hotel/se/lulea-village-cabin.sv.html?label=se-lulea-*rgAveSSEIbDgUlJOygZbgS506508386583%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-404252355102%3Alp1012265%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ye8F2ouj63ytZ9amXY91ZM0&sid=5825efae4f5ca784ae7e1482078e5f01&gclid=CjwKCAjw-qi_BhBxEiwAkxvbkCJYlBmz0xasYU1fP9sx6gLy3tYgilEZaeX877-8DhoHG_x6U2gbyhoCgOAQAvD_BwE&aid=1810669"
+    }
   },
 ]
 
