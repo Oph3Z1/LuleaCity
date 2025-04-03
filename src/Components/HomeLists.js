@@ -3,7 +3,7 @@ import React from 'react'
 import Svg, { Path } from 'react-native-svg';
 import { useNavigation } from '@react-navigation/native';
 
-const HomeLists = ({HeaderText, ArrayCall, isFavorite, ToggleFavorite, Price}) => {
+const HomeLists = ({HeaderText, ArrayCall, Price}) => {
   const navigation = useNavigation()
 
   return (
@@ -15,9 +15,6 @@ const HomeLists = ({HeaderText, ArrayCall, isFavorite, ToggleFavorite, Price}) =
             <TouchableOpacity key={k} className="w-[12rem] h-full flex flex-col mr-[1.1rem] border-[1px] border-[#E8E8E8] rounded-[.6rem]" onPress={() => navigation.navigate('Product', { data: v })}>
               <View className="w-full h-[67%] rounded-t-[.6rem] relative">
                 <Image className="w-full h-full rounded-t-[.55rem]" source={v.image} resizeMode='cover' />
-                <TouchableOpacity className="w-[20px] h-[21px] left-[.5rem] top-[.5rem] absolute" onPress={() => ToggleFavorite(k)}>
-                  <Image source={isFavorite[k] ? require("../../assets/fav-red.png") : require("../../assets/fav.png")} className="w-full h-full" />
-                </TouchableOpacity>
               </View>
               <View className="w-full h-[33%] flex items-center justify-center relative">
                 <View className="w-[29%] h-[16%] flex flex-row justify-between left-[.7rem] top-[1.1rem] absolute">
