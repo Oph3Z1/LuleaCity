@@ -8,12 +8,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAlAO7jrJ-ec6uYL1A6BXHtnka77CU__qI",
-  authDomain: "luleacity-973b6.firebaseapp.com",
-  projectId: "luleacity-973b6",
-  storageBucket: "luleacity-973b6.firebasestorage.app",
-  messagingSenderId: "530625481610",
-  appId: "1:530625481610:web:1ee2eac7c999edfd145673"
+  // Your firebase config here!
 };
 
 // Initialize Firebase
